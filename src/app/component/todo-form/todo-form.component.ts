@@ -49,9 +49,6 @@ export class TodoFormComponent implements OnInit{
       this.isInEditMode=false
     }
   }
-  onCancel(){
-    this.todoForm.reset()
-    this.isInEditMode=false
-  }
+
 
 }
