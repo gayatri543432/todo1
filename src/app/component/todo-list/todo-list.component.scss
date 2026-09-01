@@ -1,0 +1,23 @@
+.todo-status{
+    width: 30%;
+  text-align: center;
+}
+.todo-title {
+  width: 40%;
+}
+.list-group{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.list-group-item {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  color: #1E293B;
+  padding: 16px 20px;
+
+}
+.list-group-item:hover {
+  background-color: #d7dfe6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
