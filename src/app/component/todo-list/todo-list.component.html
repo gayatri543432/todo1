@@ -1,6 +1,8 @@
-
-<ul class="list-group">
-    <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let todo of todosArr">
+<div class="card">
+    <div class="card-body">
+        
+<ul class="list-group" *ngIf="todosArr.length>1 ; else noTodo">
+    <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let todo of todosArr; trackBy:trackById">
         <strong  class="todo-title">{{todo.title}}</strong>
         <div class="todo-status">
             <span class="badge"
@@ -21,3 +23,10 @@
         </div>
     </li>
 </ul>
+<ng-template #noTodo>
+    <p>
+        NO TODOS!!
+    </p>
+</ng-template>
+    </div>
+</div>

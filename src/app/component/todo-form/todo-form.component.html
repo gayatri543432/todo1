@@ -20,12 +20,12 @@
             <button
             *ngIf="!isInEditMode"
             mat-raised-button color="primary" class="btn-block">Add Todo</button>
-            <div class="d-flex justify-content-center">
-                <button
+             <button
             (click)="onUpdate()"
             *ngIf="isInEditMode"
             class="btn-block "
             mat-raised-button color="accent">Update Todo</button>
+            
 
             
         </form>

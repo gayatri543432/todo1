@@ -16,6 +16,10 @@ export class TodoListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  trackById(index:number,todo:ITodo){
+    return todo.id
+  }
+
   onEdit(todo:ITodo){
     this.editTodo.emit(todo)
   }
